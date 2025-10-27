@@ -1,0 +1,8 @@
+require('mini.icons').setup()
+require('mini.snippets').setup()
+require('mini.completion').setup()
+require('mini.surround').setup()
+require('mini.pairs').setup()
+-- require('mini.tabline').setup()
+-- require('mini.statusline').setup()
+require('mini.animate').setup()
