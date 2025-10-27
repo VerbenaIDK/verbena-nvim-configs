@@ -8,19 +8,19 @@ It's being kept here so I don't need to redo these anytime soon, you can use it 
 
 Currently:
 
-telescope.nvim + telescope-fzf-native.nvim
-neo-tree.nvim
-nvim-treesitter
-mason-lspconfig.nvim
-nvim-colorizer
-vim-slint
-lualine.nvim
-barbar.nvim
-mini.nvim
-snacks.nvim
-nvim-dev-icons
+telescope.nvim + telescope-fzf-native.nvim,
+neo-tree.nvim,
+nvim-treesitter,
+mason-lspconfig.nvim,
+nvim-colorizer,
+vim-slint,
+lualine.nvim,
+barbar.nvim,
+mini.nvim,
+snacks.nvim,
+nvim-dev-icons,
 
-+ their dependencies
+\+ their dependencies
 
 It also has a couple shortcuts I find most comfortable, and not really any more, + it is pre-configured to install the treesitter parsers and mason LSPs I tend to use the most.
 
