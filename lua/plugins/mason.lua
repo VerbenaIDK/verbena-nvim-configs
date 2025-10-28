@@ -8,12 +8,14 @@ return {
   opts = {
     ensure_installed = {
       "lua_ls",
+      "stylua",
       "rust_analyzer",
       "bashls",
       "ast_grep",
       "pyright",
       "ts_ls",
-      "marksman"
+      "marksman",
+      "vimls"
     },
   },
 }

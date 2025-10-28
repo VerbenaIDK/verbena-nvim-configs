@@ -7,12 +7,11 @@ require("colorizer").setup()
 --- configs
 require('config.mini')
 require('config.lualine')
+require('config.telescope')
 
 --- Options
 vim.cmd "colorscheme witchhazel-hypercolor"
-vim.opt.relativenumber = false
-vim.opt.number = true
-vim.opt.cursorline = true
+require('config.opts')
 
 ---- Keymaps
 
