@@ -9,8 +9,21 @@ require('config.mini')
 require('config.lualine')
 require('config.telescope')
 
---- Options
+--- Theming
+---
+--- Uncomment to use a specific theme!
+---
+-- WitchHazel Hypercolor
+
 vim.cmd "colorscheme witchhazel-hypercolor"
+vim.api.nvim_set_hl(0, "Visual", { bold = true, fg = "#DCC8FF", bg = "#131218", standout = true })
+
+-- Nightfox
+
+vim.cmd "colorscheme carbonfox"
+
+
+--- Options
 require('config.opts')
 
 ---- Keymaps

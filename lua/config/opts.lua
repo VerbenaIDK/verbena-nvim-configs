@@ -13,4 +13,4 @@ vim.opt.softtabstop = 2 -- Number of spaces that a <Tab> counts for while perfor
 
 -- Highlight color fix
 
-vim.api.nvim_set_hl(0, "Visual", { bold = true, fg = "#DCC8FF", bg = "#131218", standout = true })
+-- vim.api.nvim_set_hl(0, "Visual", { bold = true, fg = "#DCC8FF", bg = "#131218", standout = true })
