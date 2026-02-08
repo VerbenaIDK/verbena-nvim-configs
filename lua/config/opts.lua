@@ -11,6 +11,6 @@ vim.opt.shiftwidth = 4 -- Number of spaces to use for each step of (auto)indent
 vim.opt.softtabstop = 4 -- Number of spaces that a <Tab> counts for while performing editing operations
 -- tab changes
 
--- Highlight color fix
+-- Highlight color fix for witchhazel
 
 -- vim.api.nvim_set_hl(0, "Visual", { bold = true, fg = "#DCC8FF", bg = "#131218", standout = true })
