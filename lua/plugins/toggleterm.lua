@@ -1,8 +1,8 @@
 return {
-    'akinsho/toggleterm.nvim', 
-    version = "*", 
+    'akinsho/toggleterm.nvim',
+    version = "*",
     config = true,
     keys = {
-        {"<leader>t", "<cmd>ToggleTerm<cr>", desc = "Toggle floating terminal"}
+        {"<leader>t", "<cmd>ToggleTerm direction=float name=Terminal<cr>", desc = "Toggle floating terminal"}
     }
 }
