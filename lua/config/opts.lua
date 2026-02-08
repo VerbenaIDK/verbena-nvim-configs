@@ -2,6 +2,7 @@ vim.opt.number = true -- Show numbers
 vim.opt.relativenumber = false -- No relative numbers
 vim.opt.cursorline = true -- Highlight cursorline
 vim.opt.clipboard = "unnamedplus" -- Throw yank/cut to clipboard, needs wl-clipboard
+vim.opt.linebreak = true -- better line breaking
 
 -- tab changes
 vim.opt.smartindent = true
