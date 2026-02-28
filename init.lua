@@ -2,6 +2,7 @@
 require("config.lazy")
 
 --- Neovim color preview - catgoose/nvim-colorizer.lua
+vim.cmd "set termguicolors"
 require("colorizer").setup()
 
 --- configs
@@ -21,7 +22,6 @@ require('config.telescope')
 -- Nightfox
 
 vim.cmd "colorscheme carbonfox"
-vim.cmd "set termguicolors"
 
 --- Options
 require('config.opts')
