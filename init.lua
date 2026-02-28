@@ -21,6 +21,7 @@ require('config.telescope')
 -- Nightfox
 
 vim.cmd "colorscheme carbonfox"
+vim.cmd "set termguicolors"
 
 --- Options
 require('config.opts')

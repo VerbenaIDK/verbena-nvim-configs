@@ -1,8 +1,15 @@
 vim.opt.number = true -- Show numbers
 vim.opt.relativenumber = false -- No relative numbers
 vim.opt.cursorline = true -- Highlight cursorline
-vim.opt.clipboard = "unnamedplus" -- Throw yank/cut to clipboard, needs wl-clipboard
+-- vim.opt.clipboard = "unnamedplus" -- Throw yank/cut to clipboard, needs wl-clipboard
 vim.opt.linebreak = true -- better line breaking
+
+-- Yank copy to clipboard
+vim.keymap.set('v', '<C-y>', [["+y]])
+-- Delete copy to clipboard
+vim.keymap.set('v', '<C-d>', [["+d]])
+-- Cut copy to clipboard
+vim.keymap.set('v', '<C-x>', [["+x]])
 
 -- tab changes
 vim.opt.smartindent = true
