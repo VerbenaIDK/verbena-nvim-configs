@@ -21,7 +21,11 @@ require('config.telescope')
 
 -- Nightfox
 
-vim.cmd "colorscheme carbonfox"
+--vim.cmd "colorscheme carbonfox"
+
+-- Tokyo Night night style
+
+vim.cmd "colorscheme tokyonight-night"
 
 --- Options
 require('config.opts')
