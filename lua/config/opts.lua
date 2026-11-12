@@ -4,6 +4,10 @@ vim.opt.cursorline = true -- Highlight cursorline
 -- vim.opt.clipboard = "unnamedplus" -- Throw yank/cut to clipboard, needs wl-clipboard
 vim.opt.linebreak = true -- better line breaking
 
+-- Explicit undo and redo cause it was doing me grief
+vim.keymap.set('n', 'u', [[<Cmd>undo<CR>]])
+vim.keymap.set('n', '<S-u>', [[<Cmd>redo<CR>]])
+
 -- Yank copy to clipboard
 vim.keymap.set('v', '<C-y>', [["+y]])
 -- Delete copy to clipboard
@@ -26,19 +30,19 @@ vim.opt.softtabstop = 4 -- Number of spaces that a <Tab> counts for while perfor
 -- toggleterm things
 function _G.set_terminal_keymaps()
   local opts = {buffer = 0}
-  vim.keymap.set('t', '<esc>', [[<C-\><C-n>]], opts)
+  --vim.keymap.set('t', '<esc>', [[<C-\><C-n>]], opts)
   --vim.keymap.set('t', 'jk', [[<C-\><C-n>]], opts)
   --vim.keymap.set('t', '<C-h>', [[<Cmd>wincmd h<CR>]], opts)
   --vim.keymap.set('t', '<C-j>', [[<Cmd>wincmd j<CR>]], opts)
   --vim.keymap.set('t', '<C-k>', [[<Cmd>wincmd k<CR>]], opts)
   --vim.keymap.set('t', '<C-l>', [[<Cmd>wincmd l<CR>]], opts)
   --vim.keymap.set('t', '<C-w>', [[<C-\><C-n><C-w>]], opts)
-  vim.keymap.set('t', '<leader>w', [[<C-\><C-n><leader>w]])
-  vim.keymap.set('t', '<leader><left>', [[<Cmd>wincmd h<CR>]], opts)
-  vim.keymap.set('t', '<leader><right>', [[<Cmd>wincmd l<CR>]], opts)
-  vim.keymap.set('t', '<leader><up>', [[<Cmd>wincmd k<CR>]], opts)
-  vim.keymap.set('t', '<leader><down>', [[<Cmd>wincmd j<CR>]], opts)
-  vim.keymap.set('t', '<leader>q', [[<Cmd>ToggleTerm<CR>]], opts)
+  --vim.keymap.set('t', '<leader>w', [[<C-\><C-n><leader>w]])
+  --vim.keymap.set('t', '<leader><left>', [[<Cmd>wincmd h<CR>]], opts)
+  --vim.keymap.set('t', '<leader><right>', [[<Cmd>wincmd l<CR>]], opts)
+  --vim.keymap.set('t', '<leader><up>', [[<Cmd>wincmd k<CR>]], opts)
+  --vim.keymap.set('t', '<leader><down>', [[<Cmd>wincmd j<CR>]], opts)
+  --vim.keymap.set('t', '<leader>q', [[<Cmd>ToggleTerm<CR>]], opts)
 end
 
 -- if you only want these mappings for toggle term use term://*toggleterm#* instead
