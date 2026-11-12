@@ -1,2 +1,2 @@
 git push origin main
-git push github origin
+git push github main
